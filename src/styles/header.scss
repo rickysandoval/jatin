@@ -1,0 +1,31 @@
+.site-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.site-header__nav {
+    display: inline-block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+
+    ul {
+        display: flex;
+        list-style: none;
+    }
+
+    li {
+        padding: 0 1rem;
+    }
+
+    a {
+        color: #333;
+        text-decoration: none;
+        &:hover {
+            color: #999;
+        }
+    }
+}

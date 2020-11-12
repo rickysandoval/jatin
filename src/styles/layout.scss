@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.site-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    >main {
+        flex-grow: 1;
+    }
+}
+
+.content-wrapper {
+    padding: 0 1rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}

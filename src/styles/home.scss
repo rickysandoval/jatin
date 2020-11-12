@@ -1,0 +1,9 @@
+.home__title {
+    @extend .page__title;
+
+    font-size: 6rem;
+}
+
+.home__main {
+    padding: 10rem 0;
+}
