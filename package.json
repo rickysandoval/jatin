@@ -12,6 +12,7 @@
     "build": "webpack"
   },
   "dependencies": {
+    "moment": "^2.29.1",
     "reset-css": "^5.0.1"
   }
 }

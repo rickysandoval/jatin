@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+   BREAKPOINTS
+*/
+/* 400px  */
+/* 512px  */
+/* 768px  */
+/* 1024px */
+/* 1440px */
+/* 1920px */
+/* 399px  */
+/* 511px  */
+/* 767px  */
+/* 1023px */
+/* 1439px */
+/* 1919px */
+/*
+   COLORS
+*/
+/*
+    Color palet from Gemma by Cole Peters
+    https://github.com/colepeters/gemma
+*/
+/*
+   TYPE SCALE
+*/
+/*
+   TYPOGRAPHY
+*/
+/*
+   SPACING
+*/
+/* 4px   */
+/* 8px   */
+/* 16px  */
+/* 32px  */
+/* 48px  */
+/* 64px  */
+/* Whatever font size on element is times the line-height */
+html {
+  font-size: 62.5%;
+  font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #141515;
+}
+@media (min-width: 64em) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 120em) {
+  body {
+    font-size: calc(1.125 * $base-font-rem);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.site-wrapper > main {
+  flex-grow: 1;
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 0 1.6rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.page__title, .home__title {
+  text-align: center;
+  font-size: 3.7897488592rem;
+}
+
+.page__section {
+  margin-bottom: 6.4rem;
+}
+
+.text-content {
+  margin: 0 auto 1.6rem auto;
+  max-width: 62.5rem;
+  font-size: 1.6rem;
+}
+
+.site-header {
+  width: 100%;
+  text-align: center;
+}
+
+.site-header__nav {
+  display: inline-block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 3.2rem 1.6rem;
+  font-size: 1.6rem;
+}
+.site-header__nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.site-header__nav li {
+  padding: 0 1.6rem;
+}
+.site-header__nav a {
+  color: #333;
+  text-decoration: none;
+}
+.site-header__nav a:hover {
+  color: #999;
+}
+
+.site-footer {
+  padding: 3.2rem 1.6rem;
+  text-align: center;
+}
+
+.home__title {
+  font-size: 5.0517352293rem;
+}
+
+.home__main {
+  padding: 6.4rem 0;
+}
+
+.podcast-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 80rem;
+  margin: auto;
+}
+.podcast-list li {
+  margin-bottom: 3.2rem;
+}
+
+.blog-entries__list {
+  list-style: none;
+}
+
+.blog-entry__wrapper {
+  margin-bottom: 1.6rem;
+}
+
+.blog-entry__title-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.blog-entry__thumbnail {
+  flex-shrink: 1;
+}
+
+.blog-entry__title {
+  font-size: 2.8430224rem;
+  margin: 0;
+  margin-left: 1.6rem;
+}
+
+.blog-entry__description img {
+  display: none;
+}

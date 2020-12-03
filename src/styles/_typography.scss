@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+
+html {
+    font-size: 62.5%;
+    font-family: $fontFamily-sans;
+}
+
+body {
+    font-size: $mobile-base-font-rem;
+    line-height: $lineHeight;
+    color: $color-text;
+
+    @media (min-width: $screen-lg-min) {
+        font-size: $base-font-rem;
+    }
+
+    @media (min-width: $screen-xxl-min) {
+        font-size: calc(1.125 * $base-font-rem);
+    }
+}

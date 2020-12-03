@@ -1,6 +1,6 @@
-@import '../../node_modules/reset-css/reset.css';
+@import '../../node_modules/reset-css/sass/reset';
 
-
+@import './variables';
 @import './typography.scss';
 @import './layout.scss';
 @import './content.scss';
@@ -12,3 +12,4 @@
 
 @import './home.scss';
 @import './podcast.scss';
+@import './blog.scss';

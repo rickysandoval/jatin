@@ -1,9 +1,9 @@
 .home__title {
     @extend .page__title;
 
-    font-size: 6rem;
+    font-size: $fontSize-5;
 }
 
 .home__main {
-    padding: 10rem 0;
+    padding: $spacing-4 0;
 }

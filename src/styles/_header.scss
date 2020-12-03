@@ -8,8 +8,8 @@
     margin: 0 auto;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 2rem 1rem;
-    font-size: 1.4rem;
+    padding: $spacing-2 $spacing-1;
+    font-size: $fontSize-1;
 
     ul {
         display: flex;
@@ -18,7 +18,7 @@
     }
 
     li {
-        padding: 0 1rem;
+        padding: 0 $spacing-1;
     }
 
     a {
