@@ -23,15 +23,18 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/reset-css/reset.css": {
+	"/node_modules/reset-css/sass/_reset.scss": {
 		"aP": 1,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/node_modules/reset-css/reset-min.css",
+		"oAP": "/node_modules/reset-css/sass/_reset.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 0,
+		"sct": 0
 		},
 	"/package.json": {
 		"ft": 524288,
@@ -40,6 +43,36 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/src/blog/blog-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/src/blog/blog-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/src/blog/blog.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/src/blog/blog-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/blog/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/blog/index.php",
+		"oF": 0
 		},
 	"/src/index.js": {
 		"bF": 0,
@@ -84,7 +117,7 @@
 		"oAP": "/src/podcast/index.php",
 		"oF": 0
 		},
-	"/src/styles/content.scss": {
+	"/src/styles/_blog.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -92,12 +125,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/styles/content.css",
+		"oAP": "/src/styles/_blog.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
 		},
-	"/src/styles/footer.scss": {
+	"/src/styles/_content.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -105,12 +138,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/styles/footer.css",
+		"oAP": "/src/styles/_content.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
 		},
-	"/src/styles/header.scss": {
+	"/src/styles/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -118,12 +151,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/styles/header.css",
+		"oAP": "/src/styles/_footer.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
 		},
-	"/src/styles/home.scss": {
+	"/src/styles/_header.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -131,12 +164,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/styles/home.css",
+		"oAP": "/src/styles/_header.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
 		},
-	"/src/styles/layout.scss": {
+	"/src/styles/_home.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -144,7 +177,59 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/src/styles/layout.css",
+		"oAP": "/src/styles/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/src/styles/_layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/styles/_layout.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/src/styles/_podcast.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/styles/_podcast.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/src/styles/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/styles/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/src/styles/_variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/styles/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -168,32 +253,6 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/src/styles/main.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
-	"/src/styles/podcast.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/styles/podcast.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
-	"/src/styles/typography.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/styles/typography.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
