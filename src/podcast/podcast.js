@@ -1,10 +1,8 @@
 import SpotifyWebApi from '../../node_modules/spotify-web-api-js/src/spotify-web-api.js'
 const spotifyApi = new SpotifyWebApi()
 
-const SESSION_STORAGE_TOKEN_KEY = 'SPOTIFY_API_TOKEN';
-
 window.addEventListener('load', () => {
-    getAccessToken()
+    getAccessToken(true)
         .then(token => {
             console.log(token);
             spotifyApi.setAccessToken(token);
@@ -39,25 +37,14 @@ function createPodcastPlayer(episode) {
     return li;
 }
 
-function getAccessToken() {
-    if (sessionStorage.getItem(SESSION_STORAGE_TOKEN_KEY)) {
+function getAccessToken(forceReload) {
+    if (!forceReload && sessionStorage.getItem(SESSION_STORAGE_TOKEN_KEY)) {
         return Promise.resolve(sessionStorage.getItem(SESSION_STORAGE_TOKEN_KEY));
     } else {
-    const body = {
-        'grant_type': 'client_credentials',
-    };
-    const searchParams = Object.keys(body).map((key) => {
-        return encodeURIComponent(key) + '=' + encodeURIComponent(body[key]);
-    }).join('&');
-    return fetch('https://accounts.spotify.com/api/token', {
-            method: 'post',
-            body: searchParams,
-            headers: new Headers({
-                'Authorization': 'Basic MzJiNDE3NzBmODU5NDA1N2JjZTE1OTA4ODllZDJjYTI6Y2ZkYzQxNTRjODU5NGM5ZDkwYzZmZWUxOTVkMDRmZDQ=',
-                'Content-Type': 'application/x-www-form-urlencoded',
+        return fetch('http://localhost:3000/api/token')
+            .then(response => response.json())
+            .then(response => {
+                return response.access_token;
             })
-        })
-        .then(response => response.json())
-        .then(response => response.access_token)
     }
 }

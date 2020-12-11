@@ -18,3 +18,13 @@ body {
         font-size: calc(1.125 * $base-font-rem);
     }
 }
+
+a {
+    color: $color-aqua-700;
+    transition: color .2s;
+
+    &:hover,
+    &:active {
+        color: $color-aqua-900;
+    }
+}

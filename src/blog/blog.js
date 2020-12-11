@@ -31,25 +31,41 @@ function createBlogEntry(article) {
     wrapperLi.classList.add('blog-entry__wrapper');
 
     const thumbnailWrapperDiv = document.createElement('DIV');
-    thumbnailWrapperDiv.classList.add('blog-entry__thumbnail')
+    thumbnailWrapperDiv.classList.add('blog-entry__thumbnail');
+    const thumbnailLink = document.createElement('a');
+    thumbnailLink.href = article.link;
+    thumbnailLink.target = "_blank";
+    thumbnailLink.appendChild(thumbnailWrapperDiv);
 
     const contentDiv = document.createElement('DIV');
-    contentDiv.classList.add('blog-entry__content')
+    contentDiv.classList.add('blog-entry__content');
 
-    const title = document.createElement('H1')
-    title.classList.add('blog-entry__title')
+    const title = document.createElement('H1');
+    title.classList.add('blog-entry__title');
+    const titleLink = document.createElement('a');
+    titleLink.classList.add('blog-entry__title-link');
+    titleLink.href = article.link;
+    titleLink.target = "_blank";
+    titleLink.appendChild(title);
 
-    const descriptionDiv = document.createElement('DIV')
-    descriptionDiv.classList.add('blog-entry__description')
+    const descriptionDiv = document.createElement('DIV');
+    descriptionDiv.classList.add('blog-entry__description');
 
-    const dateDiv = document.createElement('DIV')
-    dateDiv.classList.add('blog-entry__date')
+    const dateDiv = document.createElement('DIV');
+    dateDiv.classList.add('blog-entry__date');
 
-    wrapperLi.appendChild(thumbnailWrapperDiv);
+    const readMoreLink = document.createElement('a');
+    readMoreLink.innerHTML = 'Read more >';
+    readMoreLink.classList.add('blog-entry__read-more-link');
+    readMoreLink.href = article.link;
+    readMoreLink.target = "_blank";
+
+    wrapperLi.appendChild(thumbnailLink);
     wrapperLi.appendChild(contentDiv);
-    contentDiv.appendChild(title);
-    contentDiv.appendChild(descriptionDiv);
+    contentDiv.appendChild(titleLink);
     contentDiv.appendChild(dateDiv);
+    contentDiv.appendChild(descriptionDiv);
+    contentDiv.appendChild(readMoreLink);
 
     const thumbnail = new Image()
     thumbnailWrapperDiv.appendChild(thumbnail);
