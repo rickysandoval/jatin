@@ -18,16 +18,49 @@ window.addEventListener('load', () => {
 });
 
 function createBlogEntry(article) {
-    const wrapper = document.createElement('LI');
-    wrapper.classList.add('blog-entry__wrapper');
-    // wrapper.classList.add('text-content');
+    /**
+     * <div class="blog-entry__wrapper">
+     *  <div class="blog-entry__thumbnail"></div>
+     *  <div class="blog-entry__content">
+     *      <div class="blog-entry__title"></div>
+     *      <div class="blog-entry__description"></div>
+     *  </div>
+     * </div>
+    */
+    const wrapperLi = document.createElement('LI');
+    wrapperLi.classList.add('blog-entry__wrapper');
 
-    const titleDiv = document.createElement('DIV');
-    titleDiv.classList.add('blog-entry__title-wrapper')
+    const thumbnailWrapperDiv = document.createElement('DIV');
+    thumbnailWrapperDiv.classList.add('blog-entry__thumbnail')
 
-    const thumbnailWrapper = document.createElement('DIV');
-    thumbnailWrapper.classList.add('blog-entry__thumbnail')
+    const contentDiv = document.createElement('DIV');
+    contentDiv.classList.add('blog-entry__content')
+
+    const title = document.createElement('H1')
+    title.classList.add('blog-entry__title')
+
+    const descriptionDiv = document.createElement('DIV')
+    descriptionDiv.classList.add('blog-entry__description')
+
+    const dateDiv = document.createElement('DIV')
+    dateDiv.classList.add('blog-entry__date')
+
+    wrapperLi.appendChild(thumbnailWrapperDiv);
+    wrapperLi.appendChild(contentDiv);
+    contentDiv.appendChild(title);
+    contentDiv.appendChild(descriptionDiv);
+    contentDiv.appendChild(dateDiv);
+
     const thumbnail = new Image()
+    thumbnailWrapperDiv.appendChild(thumbnail);
+
+
+    const articleDate = moment(article.pubDate);
+    const articleTitle = article.title;
+     // TODO wtf
+    const articleDescription = 'Guidelines for mending the toxic division in our relationships, our lives, and our country';
+    const articleThumbnail = article.thumbnail;
+    
     thumbnail.onload = () => {
         const height = thumbnail.height;
         const width = thumbnail.width;
@@ -35,24 +68,11 @@ function createBlogEntry(article) {
         thumbnail.style.height = '125px';
         thumbnail.style.width = widthRation * 125 + 'px';
     }
-    thumbnail.src = article.thumbnail;
-    titleDiv.appendChild(thumbnailWrapper);
-    thumbnailWrapper.appendChild(thumbnail);
 
-    const title = document.createElement('H1')
-    title.classList.add('blog-entry__title')
-    title.innerHTML = article.title;
-    titleDiv.appendChild(title);
+    thumbnail.src = articleThumbnail;
+    title.innerHTML = articleTitle;
+    descriptionDiv.innerHTML = articleDescription;
+    dateDiv.innerHTML = articleDate.format('MMM do YY');
 
-    wrapper.appendChild(titleDiv);
-
-    // const description = document.createElement('P');
-    // description.classList.add('blog-entry__description');
-    // description.innerHTML = article.description;
-    // wrapper.appendChild(description);
-
-    const articleDate = moment(article.pubDate);
-    console.log(articleDate.format('MMM do YY'));
-
-    return wrapper;
+    return wrapperLi;
 }

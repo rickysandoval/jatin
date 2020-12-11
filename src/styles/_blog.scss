@@ -4,9 +4,6 @@
 
 .blog-entry__wrapper {
     margin-bottom: $spacing-1;
-}
-
-.blog-entry__title-wrapper {
     display: flex;
     align-items: flex-start;
 }
@@ -15,15 +12,13 @@
     flex-shrink: 1;
 }
 
-.blog-entry__title {
-    font-size: $fontSize-3;
-    margin: 0;
+.blog-entry__content {
     margin-left: $spacing-1;
 }
 
-.blog-entry__description {
+.blog-entry__title {
+    font-size: $fontSize-3;
+}
 
-    img {
-        display: none;
-    }
+.blog-entry__description {
 }

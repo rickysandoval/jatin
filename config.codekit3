@@ -36,6 +36,17 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/node_modules/spotify-web-api-js/src/spotify-web-api.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/spotify-web-api-js/src/spotify-web-api-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -63,7 +74,7 @@
 		"oA": 0,
 		"oAP": "/src/blog/blog-min.js",
 		"oF": 0,
-		"sC": 3,
+		"sC": 0,
 		"tS": 1
 		},
 	"/src/blog/index.php": {
@@ -116,6 +127,17 @@
 		"oA": 0,
 		"oAP": "/src/podcast/index.php",
 		"oF": 0
+		},
+	"/src/podcast/podcast.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/src/podcast/podcast-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 1
 		},
 	"/src/styles/_blog.scss": {
 		"aP": 1,
@@ -2118,7 +2140,7 @@
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 0
+		"transpilerStyle": 1
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,

@@ -213,9 +213,6 @@ body {
 
 .blog-entry__wrapper {
   margin-bottom: 1.6rem;
-}
-
-.blog-entry__title-wrapper {
   display: flex;
   align-items: flex-start;
 }
@@ -224,12 +221,10 @@ body {
   flex-shrink: 1;
 }
 
-.blog-entry__title {
-  font-size: 2.8430224rem;
-  margin: 0;
+.blog-entry__content {
   margin-left: 1.6rem;
 }
 
-.blog-entry__description img {
-  display: none;
+.blog-entry__title {
+  font-size: 2.8430224rem;
 }
