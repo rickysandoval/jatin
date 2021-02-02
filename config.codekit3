@@ -45,7 +45,7 @@
 		"oAP": "/node_modules/spotify-web-api-js/src/spotify-web-api-min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/package.json": {
 		"ft": 524288,
@@ -120,6 +120,14 @@
 		"oAP": "/src/partials/header.php",
 		"oF": 0
 		},
+	"/src/partials/spinner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/partials/spinner.php",
+		"oF": 0
+		},
 	"/src/podcast/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -127,6 +135,17 @@
 		"oA": 0,
 		"oAP": "/src/podcast/index.php",
 		"oF": 0
+		},
+	"/src/podcast/podcast-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/src/podcast/podcast-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		},
 	"/src/podcast/podcast.js": {
 		"bF": 4,
@@ -148,6 +167,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/src/styles/_blog.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/src/styles/_buttons.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/styles/_buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -230,6 +262,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/src/styles/_spinner.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/styles/_spinner.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/src/styles/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -239,6 +284,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/src/styles/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/src/styles/_utils.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/styles/_utils.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -255,6 +313,272 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
+		},
+	"/src/styles/fontawesome-free/css/all.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/all-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/all.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/all.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/brands.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/brands-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/brands.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/brands.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/fontawesome.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/fontawesome-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/fontawesome.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/fontawesome.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/regular.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/regular-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/regular.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/regular.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/solid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/solid-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/solid.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/solid.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/svg-with-js.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/svg-with-js-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/svg-with-js.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/svg-with-js.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/v4-shims.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/v4-shims-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/css/v4-shims.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/css/v4-shims.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-brands-400.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-brands-400.eot",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-brands-400.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-brands-400.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-brands-400.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-brands-400.ttf",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-brands-400.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-brands-400.woff",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-brands-400.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-brands-400.woff2",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-regular-400.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-regular-400.eot",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-regular-400.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-regular-400.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-regular-400.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-regular-400.ttf",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-regular-400.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-regular-400.woff",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-regular-400.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-regular-400.woff2",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-solid-900.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-solid-900.eot",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-solid-900.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-solid-900.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-solid-900.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-solid-900.ttf",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-solid-900.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-solid-900.woff",
+		"oF": 0
+		},
+	"/src/styles/fontawesome-free/webfonts/fa-solid-900.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/styles/fontawesome-free/webfonts/fa-solid-900.woff2",
+		"oF": 0
 		},
 	"/src/styles/main.css": {
 		"aP": 1,

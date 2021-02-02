@@ -1,0 +1,28 @@
+.button {
+    background: $color-secondary;
+    color: white;
+    font-size: $fontSize-1;
+    padding: $spacing-half $spacing-1;
+    border: 2px solid $color-secondary;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s all;
+    letter-spacing: 1px;
+    outline: none;
+
+    &:hover {
+        outline: none;
+        background: $color-secondary-dark;
+        border-color: $color-secondary-dark;
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $color-secondary-dark;
+    }
+
+    &:active {
+        outline: none;
+        border-color: $color-secondary-dark;
+    }
+}

@@ -1,22 +1,48 @@
 import SpotifyWebApi from '../../node_modules/spotify-web-api-js/src/spotify-web-api.js'
 const spotifyApi = new SpotifyWebApi()
 
+const PER_PAGE = 5;
+
 window.addEventListener('load', () => {
+    let page = 1;
     getAccessToken(true)
         .then(token => {
             console.log(token);
             spotifyApi.setAccessToken(token);
-            spotifyApi.getShowEpisodes('6IG1OHtBSa95QpTLdiUfMW', {
-                market: 'US',
-            })
-                .then(data  => {
-                    data.items.forEach((episode) => {
-                        const iframe = createPodcastPlayer(episode);
-                        document.querySelector('#podcast-list').appendChild(iframe);
-                    })
+            loadPageOfEpisodes(page)
+                .then(({ hasMore }) => {
+                   if (hasMore) {
+                       document.querySelector('#load-more-episodes')
+                        .addEventListener('click', () => {
+                            loadPageOfEpisodes(page++)
+                                .then(({ hasMore }) => {
+                                    if (!hasMore) {
+                                        document.querySelector('#load-more-episodes').classList.add('is-hidden');
+                                    }
+                                })
+                        })
+                   }
                 });
         });
 });
+
+function loadPageOfEpisodes(page = 1) {
+    // document.querySelector('#episodes-loading-spinner').classList.remove('is-hidden');
+    return spotifyApi.getShowEpisodes('6IG1OHtBSa95QpTLdiUfMW', {
+        market: 'US',
+        limit: PER_PAGE,
+        offset: (page-1) * PER_PAGE,
+    }).then(data  => {
+        data.items.forEach((episode) => {
+            const iframe = createPodcastPlayer(episode);
+            document.querySelector('#podcast-list').appendChild(iframe);
+        });
+        document.querySelector('#episodes-loading-spinner').classList.add('is-hidden');
+        return {
+            hasMore: data.items.length === PER_PAGE,
+        }
+    });
+}
 
 /**
  * <iframe src="https://open.spotify.com/embed-podcast/show/2UtdM2mvBQesTqGTyiKn8w" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

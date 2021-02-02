@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jatin Khanna | Podcast</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/fontawesome-free/css/all.min.css">
      <script type="module" src="./podcast-min.js"></script>
 </head>
 <body>
@@ -18,7 +19,14 @@
                 <p class="text-content">With this podcast, he hopes to explore these topics and more, by interviewing other millennials who are trying to make the most of their time here on Earth.</p>
             </section>
             <div class="podcast-list__wrapper">
-                <ul class="podcast-list" id="podcast-list"><ul>
+                <ul class="podcast-list" id="podcast-list">
+                </ul>
+                <div class="spinner-wrapper" id="episodes-loading-spinner">
+                    <?php include '../partials/spinner.php' ?>
+                </div>
+                <div class="load-more-wrapper">
+                    <button class="button" id="load-more-episodes">Load More</button>
+                </div>
             </div>
         </main>
         <?php include '../partials/footer.php' ?>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jatin Khanna</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/fontawesome-free/css/all.min.css">
 </head>
 <body>
     <div class="site-wrapper">
