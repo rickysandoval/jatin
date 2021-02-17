@@ -1,3 +1,5 @@
+<?php require_once( 'couch/cms.php' ); ?>
+<cms:template title='Homepage' />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +16,9 @@
             <h1 class="home__title">Jatin Khanna</h1>
             <div class="content-wrapper">
                 <section class="home__main">
-                    <p class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur, nostrum optio iure quam recusandae ullam qui sit illo quaerat, nemo, sed distinctio ut vel nesciunt eaque harum. Cumque, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at odit delectus, illo ab in reiciendis numquam aliquam consequatur reprehenderit minus ducimus ipsa quia ad. Blanditiis adipisci minus omnis culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam adipisci facilis ducimus magni culpa a quis. Dolorum omnis nostrum sunt at possimus veritatis iure, saepe in! Amet veniam repellendus dolorum!</p>
-                    <p class="text-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non a, veritatis, doloribus earum quisquam omnis voluptate est, sed nobis saepe repellendus iure similique dolorum possimus laudantium ut officia officiis vel?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, laborum nihil dolor praesentium eveniet soluta molestias alias provident nostrum enim ipsum dolorem. Veniam aspernatur sequi nisi animi reiciendis doloremque similique?</p>
+                    <div class="text-content cms-content">
+                        <cms:editable name='main_content' type='richtext'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur, nostrum optio iure quam recusandae ullam qui sit illo quaerat, nemo, sed distinctio ut vel nesciunt eaque harum. Cumque, tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero at odit delectus, illo ab in reiciendis numquam aliquam consequatur reprehenderit minus ducimus ipsa quia ad. Blanditiis adipisci minus omnis culpa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam adipisci facilis ducimus magni culpa a quis. Dolorum omnis nostrum sunt at possimus veritatis iure, saepe in! Amet veniam repellendus dolorum!</cms:editable>
+                    </div>
                 </section>
             </div>
         </main>
@@ -23,3 +26,4 @@
     </div>
 </body>
 </html>
+<?php COUCH::invoke(); ?>

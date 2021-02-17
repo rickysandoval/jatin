@@ -162,6 +162,10 @@ body {
   font-size: 1.6rem;
 }
 
+.cms-content p {
+  margin-bottom: 1.4em;
+}
+
 .spinner-wrapper {
   text-align: center;
 }

@@ -67,7 +67,7 @@ function getAccessToken(forceReload) {
     if (!forceReload && sessionStorage.getItem(SESSION_STORAGE_TOKEN_KEY)) {
         return Promise.resolve(sessionStorage.getItem(SESSION_STORAGE_TOKEN_KEY));
     } else {
-        return fetch('http://localhost:3000/api/token')
+        return fetch('https://desolate-crag-52943.herokuapp.com/api/token')
             .then(response => response.json())
             .then(response => {
                 return response.access_token;
