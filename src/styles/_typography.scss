@@ -8,7 +8,7 @@ html {
 body {
     font-size: $mobile-base-font-rem;
     line-height: $lineHeight;
-    color: $color-text;
+    color: white;
 
     @media (min-width: $screen-lg-min) {
         font-size: $base-font-rem;
@@ -20,11 +20,11 @@ body {
 }
 
 a {
-    color: $color-aqua-700;
+    color: $color-violet-100;
     transition: color .2s;
 
     &:hover,
     &:active {
-        color: $color-aqua-900;
+        color: $color-violet-300;
     }
 }

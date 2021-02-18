@@ -1,6 +1,7 @@
 .page__title {
     text-align: center;
     font-size: $fontSize-4;
+    margin-bottom: $spacing-2;
 }
 
 .page__section {
@@ -11,6 +12,7 @@
     margin: 0 auto $spacing-1 auto;
     max-width: 62.5rem;
     font-size: $fontSize-1;
+    color: rgba(255,255,255,.75);
 }
 
 .cms-content {

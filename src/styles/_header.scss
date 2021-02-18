@@ -22,10 +22,10 @@
     }
 
     a {
-        color: #333;
+        color: rgba(255,255,255,.5);
         text-decoration: none;
         &:hover {
-            color: #999;
+            color: rgba(255,255,255,1);
         }
     }
 }

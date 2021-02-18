@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jatin Khanna | Blog</title>
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/fontawesome-free/css/all-min.css">
+    <link rel="stylesheet" href="../styles/fontawesome-free/css/all.min.css">
     <script type="module" src="./blog-min.js"></script>
 </head>
 <body>

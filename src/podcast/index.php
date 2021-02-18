@@ -8,14 +8,14 @@
     <title>Jatin Khanna | Podcast</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/fontawesome-free/css/all.min.css">
-     <script type="module" src="./podcast-min.js"></script>
+    <script type="module" src="./podcast-min.js"></script>
 </head>
 <body>
     <div class="site-wrapper">
         <?php include '../partials/header.php' ?>
         <main>
             <h1 class="page__title">Podcast</h1>
-            <section class="page__section">
+            <section class="page__section content-wrapper">
                 <div class="text-content cms-content">
                     <cms:editable name='main_content' type='richtext'>
                         <p class="text-content">Jatin is a young comedian, writer, environmentalist, and philosopher trying to make sense of it all.</p>

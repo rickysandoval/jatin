@@ -48,8 +48,8 @@ function createBlogEntry(article) {
     titleLink.target = "_blank";
     titleLink.appendChild(title);
 
-    const descriptionDiv = document.createElement('DIV');
-    descriptionDiv.classList.add('blog-entry__description');
+    // const descriptionDiv = document.createElement('DIV');
+    // descriptionDiv.classList.add('blog-entry__description');
 
     const dateDiv = document.createElement('DIV');
     dateDiv.classList.add('blog-entry__date');
@@ -64,7 +64,7 @@ function createBlogEntry(article) {
     wrapperLi.appendChild(contentDiv);
     contentDiv.appendChild(titleLink);
     contentDiv.appendChild(dateDiv);
-    contentDiv.appendChild(descriptionDiv);
+    // contentDiv.appendChild(descriptionDiv);
     contentDiv.appendChild(readMoreLink);
 
     const thumbnail = new Image()
@@ -74,7 +74,7 @@ function createBlogEntry(article) {
     const articleDate = moment(article.pubDate);
     const articleTitle = article.title;
      // TODO wtf
-    const articleDescription = 'Guidelines for mending the toxic division in our relationships, our lives, and our country';
+    // const articleDescription = 'Guidelines for mending the toxic division in our relationships, our lives, and our country';
     const articleThumbnail = article.thumbnail;
     
     thumbnail.onload = () => {
@@ -87,7 +87,7 @@ function createBlogEntry(article) {
 
     thumbnail.src = articleThumbnail;
     title.innerHTML = articleTitle;
-    descriptionDiv.innerHTML = articleDescription;
+    // descriptionDiv.innerHTML = articleDescription;
     dateDiv.innerHTML = articleDate.format('MMM do YY');
 
     return wrapperLi;

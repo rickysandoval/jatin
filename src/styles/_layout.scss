@@ -4,6 +4,8 @@ body {
 
 .site-wrapper {
     min-height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -18,4 +20,5 @@ body {
     padding: 0 $spacing-1;
     max-width: 120rem;
     margin: 0 auto;
+    box-sizing: border-box;
 }
