@@ -20,11 +20,12 @@ body {
 }
 
 a {
-    color: $color-violet-100;
+    color: #87c3fc;
     transition: color .2s;
+    text-decoration: underline;
 
     &:hover,
     &:active {
-        color: $color-violet-300;
+        color: #72a7d8;
     }
 }

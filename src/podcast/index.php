@@ -23,6 +23,11 @@
                         <p class="text-content">With this podcast, he hopes to explore these topics and more, by interviewing other millennials who are trying to make the most of their time here on Earth.</p>
                     </cms:editable>
                 </div>
+                <div class="text-content">
+                    <a href="mailto:Justkiddingthepod@gmail.com">
+                        <i class="fas fa-envelope" style="margin-right: 5px;"></i> Justkiddingthepod@gmail.com
+                    </a>
+                </div>
             </section>
             <div class="podcast-list__wrapper">
                 <ul class="podcast-list" id="podcast-list">

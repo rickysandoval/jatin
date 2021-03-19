@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
                    if (hasMore) {
                        document.querySelector('#load-more-episodes')
                         .addEventListener('click', () => {
-                            loadPageOfEpisodes(page++)
+                            loadPageOfEpisodes(++page)
                                 .then(({ hasMore }) => {
                                     if (!hasMore) {
                                         document.querySelector('#load-more-episodes').classList.add('is-hidden');

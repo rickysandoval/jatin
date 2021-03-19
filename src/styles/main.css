@@ -119,11 +119,12 @@ body {
 }
 
 a {
-  color: #e4c7f1;
+  color: #87c3fc;
   transition: color 0.2s;
+  text-decoration: underline;
 }
 a:hover, a:active {
-  color: #b689ca;
+  color: #72a7d8;
 }
 
 body {
@@ -363,16 +364,16 @@ body {
 }
 
 .social-icons {
-  font-size: 2.8430224rem;
+  font-size: 3.7897488592rem;
   padding: 0 3.2rem;
 }
 .social-icons a {
   text-decoration: none;
   display: inline-block;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
 }
 .social-icons a:hover, .social-icons a:focus, .social-icons a:active {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
 }
 .social-icons i {
   margin: 0 0.4rem;
@@ -383,7 +384,7 @@ body {
 }
 
 html {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.7) 90%), url(/assets/luscious.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.7) 90%), url(/assets/luscious.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
